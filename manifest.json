@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "CleanYouTube",
+  "version": "1.0.0",
+  "description": "Remove annoying things on YouTube.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}

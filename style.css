@@ -1,0 +1,42 @@
+/* Hide via CSS before JS runs, to avoid a flash of content. */
+
+/* Shorts shelf (home) */
+ytd-rich-shelf-renderer[is-shorts] {
+  display: none !important;
+}
+
+/* Shorts shelf (search results, etc.) */
+ytd-reel-shelf-renderer {
+  display: none !important;
+}
+
+/* Shorts entry (full and mini guide) */
+ytd-guide-entry-renderer:has(a#endpoint[title="Shorts"]),
+ytd-mini-guide-entry-renderer[aria-label="Shorts"] {
+  display: none !important;
+}
+
+/* Playables shelf (home) */
+ytd-rich-shelf-renderer:has(a[href*="/playables"]),
+ytd-rich-section-renderer:has(a[href*="/playables"]),
+grid-shelf-view-model:has(a[href*="/playables"]) {
+  display: none !important;
+}
+
+/* Playables entry (full and mini guide) */
+ytd-guide-entry-renderer:has(a[href*="/playables"]),
+ytd-mini-guide-entry-renderer:has(a[href*="/playables"]) {
+  display: none !important;
+}
+
+ytd-rich-section-renderer {
+  display: none !important;
+}
+
+/* Subscription count added by content.js */
+.cleanyt-sub-count {
+  margin-left: 8px;
+  color: var(--yt-spec-text-secondary);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
