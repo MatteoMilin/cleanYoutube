@@ -12,7 +12,7 @@ ytd-reel-shelf-renderer {
 
 /* Shorts entry (full and mini guide) */
 ytd-guide-entry-renderer:has(a#endpoint[title="Shorts"]),
-ytd-mini-guide-entry-renderer[aria-label="Shorts"] {
+ytd-mini-guide-entry-renderer:has(a[title="Shorts"]) {
   display: none !important;
 }
 

@@ -5,7 +5,7 @@
     'ytd-rich-shelf-renderer[is-shorts]', // Shorts shelf (home)
     'ytd-reel-shelf-renderer', // Shorts shelf (elsewhere)
     'ytd-guide-entry-renderer:has(a#endpoint[title="Shorts"])', // Shorts entry (full guide)
-    'ytd-mini-guide-entry-renderer[aria-label="Shorts"]', // Shorts entry (mini guide)
+    'ytd-mini-guide-entry-renderer:has(a[title="Shorts"])', // Shorts entry (mini guide)
 
     // Playables have no stable tag/attribute, so match on the "/playables" link.
     'ytd-rich-shelf-renderer:has(a[href*="/playables"])', // Playables shelf (home)
